@@ -1,0 +1,176 @@
+int c = 10;
+int a = 10;
+int y = 10;
+int g = 10;
+int p = 10;
+int m = 10;
+int b = 10;
+int C = 40;
+int A = 40;
+int Y = 40;
+int G = 40;
+int P = 40;
+int M = 40;
+int B = 40;
+int f = 50;
+int r = 10;
+
+
+
+void setup() {
+  size(1000,1000);
+  strokeWeight(8);
+  background(0,0,0);
+}
+
+void draw() {
+  //line_size
+  line(mouseX,mouseY,pmouseX,pmouseY);
+  //ellipse(mouseX,mouseY,10,10);
+
+fill(190,0,190);
+text("m=pink", 150, 10); 
+fill(0,0,255);
+text("g=blue", 250, 10); 
+fill(255,0,0);
+text("c=red", 350, 10); 
+fill(150,150,150);
+text("b=grey", 450, 10);
+fill(255,255,0);
+text("a=yellow", 550, 10); 
+fill(255,255,255);
+text("p=white", 650, 10); 
+fill(0,255,0);
+text("y=green", 750, 10); 
+fill(255,255,255);
+
+text("ENLARGE=SHIFT+m, g, c, b, a, p, or y", 10, 950); 
+text(" Left Click Mouse To Erase", 800, 950); 
+text("SPACEBAR=ERASE ALL", 400, 950); 
+
+//erase
+if (mousePressed == true) {
+   stroke(0);
+
+ 
+ }
+
+
+ }
+ 
+
+ 
+
+void keyPressed() {
+ //earase_all
+  if (key == ' ') {
+  
+   background(0,0,0);
+   }
+
+if (key == 'C') {
+  strokeWeight(C);
+  stroke(255,0,0);
+  line(mouseX,mouseY,pmouseX,pmouseY);
+  }
+
+if (key == 'f') {
+  strokeWeight(f);
+  stroke(0,0,0);
+  line(mouseX,mouseY,pmouseX,pmouseY);
+  }
+
+
+//red
+  if (key == 'c') {
+  strokeWeight(c);
+  stroke(255,0,0);
+  line(mouseX,mouseY,pmouseX,pmouseY);
+  }
+//yellow
+if (key == 'a') {
+  strokeWeight(a);
+  stroke(255,255,0);
+  line(mouseX,mouseY,pmouseX,pmouseY);
+}
+if (key == 'A') {
+  strokeWeight(A);
+  stroke(255,255,0);
+  line(mouseX,mouseY,pmouseX,pmouseY);
+}
+
+
+
+
+//green
+if (key == 'y') {
+  strokeWeight(y);
+  stroke(0,255,0);
+  line(mouseX,mouseY,pmouseX,pmouseY);
+}
+if (key == 'Y') {
+  strokeWeight(Y);
+  stroke(0,255,0);
+  line(mouseX,mouseY,pmouseX,pmouseY);
+}
+ 
+ 
+ 
+ //blue
+if (key == 'g') {
+  strokeWeight(g);
+  stroke(0,0,255);
+  line(mouseX,mouseY,pmouseX,pmouseY);
+}
+if (key == 'G') {
+  strokeWeight(G);
+  stroke(0,0,255);
+  line(mouseX,mouseY,pmouseX,pmouseY);
+}
+//white
+if (key == 'p') {
+  strokeWeight(p);
+  stroke(255,255,255);
+  line(mouseX,mouseY,pmouseX,pmouseY);
+}
+if (key == 'P') {
+  strokeWeight(P);
+  stroke(255,255,255);
+  line(mouseX,mouseY,pmouseX,pmouseY);
+}
+//pink
+if (key == 'm') {
+  strokeWeight(m);
+  stroke(190,0,190);
+  line(mouseX,mouseY,pmouseX,pmouseY);
+}
+if (key == 'M') {
+  strokeWeight(M);
+  stroke(190,0,190);
+  line(mouseX,mouseY,pmouseX,pmouseY);
+}
+//grey
+
+
+if (key == 'b') {
+  strokeWeight(b);
+  stroke(150,150,150);
+  line(mouseX,mouseY,pmouseX,pmouseY);
+
+
+if (key == 'B') {
+  strokeWeight(B);
+  stroke(150,150,150);
+  line(mouseX,mouseY,pmouseX,pmouseY);
+
+}
+
+
+}
+
+
+
+
+
+
+}
